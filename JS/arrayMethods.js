@@ -1,6 +1,6 @@
 //pop,push,shift,unshift,slice and splice.
 
-let arr = [45, "Hitman", "kiran", "openers"];
+// let arr = [45, "Hitman", "kiran", "openers"];
 // arr.push("The greatest") //it adds the element to last
 // console.log(arr);
 // arr.pop() // it removes last element
@@ -14,7 +14,33 @@ let arr = [45, "Hitman", "kiran", "openers"];
       // at last what we have to add... 
 // console.log(arr);
 
-// arr.fill("Indian cricket team is best",2,3)
+// arr.fill("Indian cricket team is best",3,4)
 // console.log(arr);
 
+//filter
+// const sun = ["england", "ireland", "newxeland","ind"]
 
+// const sun = [5,8,10,22]
+
+
+// console.log(sun.filter((val)=>(val<22)));
+
+//forEach
+
+// let harry = [55,22,54,45];
+// harry.forEach((val)=>(console.log(val*5) ))
+
+//map
+
+// let mapped = [2,4,8,16]
+// console.log(mapped.map((e)=>{return (e/2); })); 
+
+// console.log(mapped);
+
+//reduce
+
+// let red = [10,20,30,50]
+
+// console.log(red.reduce(function(curr, acc){
+//       return (curr * acc);
+// })); 
