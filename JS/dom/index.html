@@ -1,29 +1,50 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      div {
-        height: 300px;
-        width: 300px;
-        background-color: rebeccapurple;
-        color: whitesmoke;
-      }
-    </style>
   </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rebeccapurple;
+      color: whitesmoke;
+    }
+    h1 {
+      margin-left: 20px;
+      font-size: 4rem;
+    }
+  </style>
   <body>
-    <input type="text" placeholder="enter something" value="" />
-    <button onclick="okkkk()">submit</button>
-    <div></div>
+    <div class="main">
+      <h1 id="hours">15</h1>
+      <h1 id="minutes">20</h1>
+      <h1 id="seconds">15</h1>
+    </div>
     <script>
-      const input = document.getElementsByTagName("input");
-      const div = document.getElementsByTagName("div");
-      function okkkk() {
-        console.log(input.value);
+      const hours = document.getElementById("hours");
+      const minutes = document.getElementById("minutes");
+      const seconds = document.getElementById("seconds");
+
+      setInterval(() => {
+        const getDate = new Date();
+        hours.innerText = formatTime(getDate.getHours());
+        minutes.innerHTML = formatTime(getDate.getMinutes());
+        seconds.innerText = formatTime(getDate.getSeconds());
+      }, 1000);
+      function formatTime(time) {
+        return time < 10 ? `0${time}` : time;
       }
     </script>
   </body>
-</html> -->
+</html>
