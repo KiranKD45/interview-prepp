@@ -18,10 +18,10 @@ function addTask(){
 }
 
 main.addEventListener("click", (e)=>{
-if(e.target.value === "LI"){
+if(e.target.tagName === "LI"){
     e.target.classList.toggle("ckecked")
 }
-else if(e.target.value === "SPAN"){
+else if(e.target.tagName === "SPAN"){
     e.target.parentElement.remove();
 
 }
