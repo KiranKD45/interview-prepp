@@ -6,6 +6,7 @@ import Effect from './Effect';
 import LayoutEffect from './LayoutEffect';
 import Ref from './Ref';
 import ChildA from './ChildA';
+import Form from './Form';
 
 const data = createContext();
 const data1 = createContext();
@@ -22,11 +23,14 @@ function App() {
 
     {/* context api */}
 
-<data.Provider value={Name}>
+{/* <data.Provider value={Name}>
   <data1.Provider value={Age}>
     <ChildA/>
     </data1.Provider>
-    </data.Provider>
+    </data.Provider> */}
+
+    {/* registration form */}
+    <Form />
     </div>
   );
 }
